@@ -12,6 +12,11 @@ Clone this project into your local machine and follow the instructions below.
 - `lolcat` - enabling rainbow text coloring
 - `tty-prompt` - enabling beautiful and easy option selection and user input
 
+## Curious how I built it? 
+here's a walkthrough of the setup: <https://youtu.be/xvnvRpJUBl4>
+
+afterwards, I was hit with a wave of stage fright and could not continue with a recording :D 
+
 ## Impromptu ERD
 
 ```
