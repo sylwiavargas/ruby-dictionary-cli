@@ -6,6 +6,7 @@ A CLI tech dictionary for Mod1 students.
 Clone this project into your local machine and follow the instructions below.
 - Install the gems required for the guide: `bundle install`
 - To start, run the following command from you project folder: `ruby bin/run.rb`
+⭐️ If you like the idea, please give this repo a star! ⭐️
 
 ## Built with
 - `colorize` - enabling text coloring
@@ -23,3 +24,6 @@ afterwards, I was hit with a wave of stage fright and could not continue with a 
 Word ----< Definition
 :name       :content, :word
 ```
+
+## Wanna add a definition or a word? 
+Suggest one in [this issue](https://github.com/sylwiavargas/dict_cli/issues/1)! 
