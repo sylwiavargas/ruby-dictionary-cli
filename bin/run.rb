@@ -17,6 +17,7 @@ class_variable_w = Word.new("class variable")
 class_w = Word.new("class")
 domain_model_w = Word.new("domain model")
 domain_modelling_w = Word.new("domain modelling")
+dry_w = Word.new("dry")
 enumerable_method_w = Word.new("enumerable method")
 enumerable_w = Word.new("enumerable")
 erd_w = Word.new("erd")
@@ -114,7 +115,9 @@ definitions_array = [{content: "an argument is what you invoke the method or fun
 {content: "You won't really ever use attr_writer (exception is a form!)", word: attr_writer_w},
 {content: "attr_accessor is a shortcut that means attr_reader and attr_writer.", word: attr_accessor_w},
 {content: "Parameters are a data blueprint set when writing a function", word: parameter_w},
-{content: "Arguments are real data passed into a function when called", word: argument_w}
+{content: "Arguments are real data passed into a function when called", word: argument_w},
+{content: "D.R.Y: Don’t repeat yourself: use classes to avoid repeating yourself", word: dry_w},
+{content: "There can be a binding pry within a binding pry", word: binding_pry_w}
 ]
 
 definitions_array.each{|def_hash| Definition.new(def_hash[:content], def_hash[:word])}
