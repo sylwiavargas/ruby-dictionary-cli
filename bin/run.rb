@@ -9,12 +9,14 @@ array_ruby_w = Word.new("array")
 associations_w = Word.new("associations")
 attr_accessor_w = Word.new("attr_accessor")
 attr_reader_w = Word.new("attr_reader")
-attr_writer_w = Word.new("attrriter")
+attr_writer_w = Word.new("attr_writer")
 attribute_w = Word.new("attribute")
+binding_pry_w = Word.new("binding.pry")
 class_method_w = Word.new("class method")
 class_variable_w = Word.new("class variable")
 class_w = Word.new("class")
 domain_model_w = Word.new("domain model")
+domain_modelling_w = Word.new("domain modelling")
 enumerable_method_w = Word.new("enumerable method")
 enumerable_w = Word.new("enumerable")
 erd_w = Word.new("erd")
@@ -26,6 +28,7 @@ initialize_w = Word.new("initialize")
 instance_method_w = Word.new("instance method")
 instance_variable_w = Word.new("instance variable")
 iterate_w = Word.new("iterate")
+many_to_many_relationship_w = Word.new("many_to_many relationship")
 method_w = Word.new("method")
 module_w = Word.new("module")
 object_oriented_programming_w = Word.new("object oriented programming")
@@ -33,11 +36,15 @@ oop_w = Word.new("oop")
 object_ruby_w = Word.new("object")
 one_to_many_relationship_w = Word.new("one-to-many relationship")
 parameter_w = Word.new("parameter")
-many_to_many_relationship_w = Word.new("many_to_many relationship")
+pry_w = Word.new("pry")
+require_all_w = Word.new("require_all")
+require_relative_w = Word.new("require_relative")
 self_w = Word.new("self")
 setter_method_w = Word.new("setter method")
 single_source_of_truth_w = Word.new("hash")
 variable_w = Word.new("variable")
+yagni_w = Word.new("yagni")
+
 
 # we don't need variables here because we just want to create these objects
 
@@ -82,7 +89,33 @@ definitions_array = [{content: "an argument is what you invoke the method or fun
 {content: "self is what the method is called on; it's like the subject of the method so in floofy.bark, floofy will be the self and in Dog.all Dog will be self", word: self_w},
 {content: "This method is used to SET or assign the value of an instance variable", word: setter_method_w},
 {content: "This means that all the instances of a Dog class should be pushed only to the @@all in the Dog class; you can call Dog.all from another class, though", word: single_source_of_truth_w},
-{content: "It's like a little pocket of data", word: variable_w}]
+{content: "every single model should be responsible only for knowing where its own instances are; it's not the job of an instance to know everything of other instances --  it's the job of the class to know exactly what the instances are up to", word: single_source_of_truth_w},
+
+{content: "It's like a little pocket of data", word: variable_w},
+{content: "many to many is actually two one to many relationships joined by one common denominator", word: many_to_many_relationship_w},
+{content: "require all can link multiple files", word: require_all_w},
+{content: "require_all is a gem that gives you a require_all method; this method accepts an argument of the folder you want to tie in, e.g. 'models' if the folder is located in the same folder as the runner, or its relative path (e.g. require_all '../models) if it’s located somewhere else", word: require_all_w},
+{content: "require_relative is a method provided by Ruby that allows you to tie another file to the one you're working in", word: require_relative_w},
+{content: " to establish a many-to-many relationship you need a bridging class that joins the two into two different one-<many relationships", word: many_to_many_relationship_w},
+{content: "for example an actor has many movies and movie has many actors; in order to have such a relationship in our app, we need to introduce a JOINER: Actor -< Role >- Movie", word: many_to_many_relationship_w},
+{content: "Recipe for a many-to-many relationship: a) Create file with joiner class, b) Check whether runner file is connected to joiner file by creating a new test instance of the joiner class - an “unitialized” error means it’s not working, c) Create test data for joiner class, d) Write methods", word: many_to_many_relationship_w},
+{content: "YAGNI: You Aren’t Gonna Need It - only create methods that are directly necessary", word: yagni_w},
+{content: "binding.pry? more like binding.cry!", word: binding_pry_w},
+{content: "pry me to the moon", word: pry_w},
+{content: "pry me a river", word: pry_w},
+{content: "pry me to the moon", word: pry_w},
+{content: "domain modeling = planning out the relationships and characteristics of all the models in your app", word: domain_modelling_w},
+{content: "Domain holds objects and their relationships", word: domain_model_w},
+{content: "The Single Source of Truth principle: Every single model should only keep track of its own instances (i.e., Tweets only live in class Tweet; users only live in class User)", word: single_source_of_truth_w},
+{content: "Recipe for #initialize: a) Write method with parameters; b) Write @instance_variables; c) Create attr_ macros... Recipe for .all: Define a @@class_variable; d) Define a self.all class method; e) << push the newly created instance to the @@class_variable", word: initialize_w},
+{content: "Writing binding.pry; self is a good practice when writing and adding to code to periodically check what self is/does", word: pry_w},
+{content: "If a method starts with self, you can call it with the class.", word: class_method_w},
+{content: "self is a special variable that points to the object/class that 'owns' the currently executing code: For example, in a Dog class, method by itself is an instance method, called on an instance: stella.method - self.method is an class method, called on the entire class: Dog.method", word: self_w},
+{content: "You won't really ever use attr_writer (exception is a form!)", word: attr_writer_w},
+{content: "attr_accessor is a shortcut that means attr_reader and attr_writer.", word: attr_accessor_w},
+{content: "Parameters are a data blueprint set when writing a function", word: parameter_w},
+{content: "Arguments are real data passed into a function when called", word: argument_w}
+]
 
 definitions_array.each{|def_hash| Definition.new(def_hash[:content], def_hash[:word])}
 
