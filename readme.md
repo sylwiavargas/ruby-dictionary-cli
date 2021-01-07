@@ -6,6 +6,7 @@ A CLI tech dictionary for Mod1 students.
 Clone this project into your local machine and follow the instructions below.
 - Install the gems required for the guide: `bundle install`
 - To start, run the following command from you project folder: `ruby bin/run.rb`
+
 ⭐️ If you like the idea, please give this repo a star! ⭐️
 
 ## Built with
