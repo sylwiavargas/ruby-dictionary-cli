@@ -27,13 +27,12 @@ class Word
 
     def self.print_all_words
         self.all.each do |word| 
-            return if word.no_definitions?
-            word.print_name_and_defs
+            word.print_name_and_defs if word.has_definitions?
         end
     end
 
     def print_name_and_defs
-        return if self.no_definitions?
+        return unless self.has_definitions?
         print_name
         print_definitions
         puts "\n"
@@ -51,8 +50,8 @@ class Word
         self.all.select{|word| word.name.include?(word_request)}
     end
 
-    def no_definitions?
-        self.definitions.empty?
+    def has_definitions?
+        !self.definitions.empty?
     end
 
 end
