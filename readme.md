@@ -1,6 +1,6 @@
-# Mod1 Tech Dictionary
+# Ruby Tech Dictionary
 
-A CLI tech dictionary for Mod1 students.
+A CLI tech dictionary for Ruby students.
 
 ## Getting Started
 Clone this project into your local machine and follow the instructions below.
