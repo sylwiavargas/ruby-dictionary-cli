@@ -27,7 +27,7 @@ class Word
 
     def self.print_all_words
         self.all.each do |word| 
-            word.print_name_and_defs if word.has_definitions?
+            word.print_name_and_defs
         end
     end
 
