@@ -16,7 +16,7 @@ class DictApp
         _/      Y      \_
        // ~~ ~~ | ~~ ~  \\
       // ~ ~ ~~ | ~~~ ~~ \\      " + color_str(" Welcome to ", "yellow", "black") + "
-     //________.|.________\\     " + color_str(" Mod1 Tech Dictionary ", "yellow", "black") + "
+     //________.|.________\\     " + color_str(" Phase 1 Tech Dictionary ", "yellow", "black") + "
     `----------`-'----------"
         sleep(1.1)
     end
