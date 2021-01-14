@@ -26,9 +26,7 @@ class Word
     end
 
     def self.print_all_words
-        self.all.each do |word| 
-            word.print_name_and_defs
-        end
+        self.all.each{|word| word.print_name_and_defs}
     end
 
     def print_name_and_defs
