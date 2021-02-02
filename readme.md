@@ -3,7 +3,7 @@
 A CLI tech dictionary for Ruby students.
 
 ## Getting Started
-Clone this project into your local machine and follow the instructions below.
+- Clone this project into your local machine
 - Install the gems required for the guide: `bundle install`
 - To start, run the following command from you project folder: `ruby bin/run.rb`
 
