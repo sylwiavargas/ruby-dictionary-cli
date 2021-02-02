@@ -25,6 +25,6 @@ module CliControls
         str.colorize(:color => font_color, :background => background_color)
     end
 
-    $motivational_thingy = ["you're doing great!", "don't worry, you got this!", "you'll be fine!", "please take a break!", "remember: learning is always hard!", "education is messy!"].sample
+    $motivational_thingy = ["you're doing great!", "don't worry, you got this!", "you'll be fine!", "please take a break!", "remember: learning is always hard but you got this!", "education is messy but just code one line at a time!"].sample
     $emoji = ["✨ ", "💖 ", "🐙 "].sample
 end
