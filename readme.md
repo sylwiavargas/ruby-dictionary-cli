@@ -7,8 +7,6 @@ A CLI tech dictionary for Ruby students.
 - Install the gems required for the guide: `bundle install`
 - To start, run the following command from you project folder: `ruby bin/run.rb`
 
-⭐️ If you like the idea, please give this repo a star! ⭐️
-
 ## Built with
 - `colorize` - enabling text coloring
 - `lolcat` - enabling rainbow text coloring
